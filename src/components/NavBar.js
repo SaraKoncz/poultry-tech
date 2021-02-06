@@ -96,9 +96,9 @@ class NavBar extends Component{
                                 </div>
                             </div>
                             </div>
-                        <div className="logo" style={{position: 'fixed', right: '0', top: '50px'}}>
+                        <div className="tamogatas" >
                             <Link to = {`${process.env.PUBLIC_URL}/tamogatas`}>
-                                <img src="assets/img/logo/ginop.jpg" className="img-fluid" alt="Logo" style={{maxWidth: '220px'}}/>
+                                <img src="assets/img/logo/ginop.jpg" className="img-fluid" alt="Logo" />
                             </Link>
                         </div>
                     </div>
