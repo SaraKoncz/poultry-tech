@@ -160,18 +160,33 @@
             }
 
             .header-info-wrapper{
+                @media #{$desktop-device}{
+
+                    .logo a img {
+                        max-width: 135px;
+                    }
+                }
                 @media #{$tablet-device}{
                     
                     justify-content: space-between;
+                    .logo a img {
+                        max-width: 115px;
+                    }
                 }
                 @media #{$large-mobile}{
                     justify-content: space-between;
+                    .logo a img {
+                        max-width: 115px;
+                    }
                 }
 
                 .logo{
                     @media #{$extra-small-mobile}{
                         flex-basis: 265px;
                         padding-right: 0;
+                        a img {
+                            max-width: 115px;
+                        }
                     }
                 }
             }
@@ -208,9 +223,55 @@
             }
 
             .header-info-area{
-                @media #{$desktop-device, $tablet-device, $large-mobile}{
-                    padding: 25px 0;
+                .tamogatas {
+                    position: fixed;
+                    right: 35px;
+                    top: 50px;
+
+                    .img-fluid {
+                        max-width: 220px;
+                    }
                 }
+                @media #{$desktop-device}{
+                    padding: 25px 0;
+                    
+                    .tamogatas {
+                        position: fixed;
+                        right: 0;
+                        top: 28px;
+                        
+                        .img-fluid {
+                            max-width: 150px;
+                        }
+                    }
+                }
+                @media #{$tablet-device}{
+                    padding: 10px 0;
+                    .tamogatas {
+                        position: fixed;
+                        right: 80px;
+                        top: 10px;
+
+                        .img-fluid {
+                            max-width: 155px;
+                        }
+                    }
+                }
+
+                @media #{$large-mobile, $small-mobile, $extra-small-mobile}{
+                    padding: 10px 0;
+                    .tamogatas {
+                        position: fixed;
+                        right: 50px;
+                        top: 10px;
+
+                        .img-fluid {
+                            max-width: 140px;
+                        }
+                    }
+                }
+
+                
             }
         }
      
