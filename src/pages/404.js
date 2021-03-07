@@ -4,10 +4,12 @@ import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
 class PageNotFound extends Component{
     render(){
+        
+        const {isEng, onLanguageChange} = this.props;
         return(
             <div>
                 {/* Navigation bar */}
-                <NavBar/>
+                <NavBar isEng={isEng} onLanguageChange={onLanguageChange}/>
 
                 {/*====================  404 page content ====================*/}
                 <div>
@@ -18,9 +20,10 @@ class PageNotFound extends Component{
                             <div className="error-content-centered d-flex align-items-center justfy-content-center">
                             <div className="error-page-content-wrap">
                                 <h2>404</h2>
-                                <h3>PAGE NOT FOUND</h3>
-                                <p>Sorry but the page you are looking for does not exist, have been removed, name changed or is temporarily unavailable.</p>
-                                <a href="/" className="ht-btn ht-btn--default ht-btn--default--dark-hover">Back to Home Page</a>
+                                <h3>{isEng ? 'PAGE NOT FOUND' : 'A KERESETT OLDAL NEM TALÁLHATÓ'}</h3>
+                                <p>{isEng ? 'Sorry but the page you are looking for does not exist, have been removed, name changed or is temporarily unavailable.'
+                                    : 'Sajnáljuk, de a keresett oldal nem létezik, eltávolításra került, a név megváltozott, vagy ideiglenesen nem érhető el.'}</p>
+                                <a href="/" className="ht-btn ht-btn--default ht-btn--default--dark-hover">{isEng ? 'Back to Home Page' : 'Vissza a főoldalra'}</a>
                             </div>
                             </div>
                         </div>
@@ -31,12 +34,9 @@ class PageNotFound extends Component{
 
                 {/*====================  End of 404 page content  ====================*/}
 
-                {/* Footer */}
-                <Footer/>
+                <Footer isEng={isEng}/>
 
-                {/* Mobile Menu */}
-                <MobileMenu/>
-
+                <MobileMenu isEng={isEng} onLanguageChange={onLanguageChange}/>
             </div>
         )
     }

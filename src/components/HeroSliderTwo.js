@@ -3,6 +3,8 @@ import Swiper from 'react-id-swiper';
 
 class HeroSliderTwo extends Component{
     render(){
+        const {isEng} = this.props;
+        
         const params = {
             slidesPerView : 1,
             loop: true,
@@ -25,9 +27,30 @@ class HeroSliderTwo extends Component{
         };
 
         let data = [
-            {bgImg: 'slider9.jpg', sliderTitle: 'Korszerű Baromfitelepek', sliderSubtitle: 'Komplett automatizált rendszerek világszínvonalú berendezésekkel', btnLink: 'contact-us'},
-            {bgImg: 'slider7.jpg', sliderTitle: 'Tervezéstől a megvalósításig', sliderSubtitle: 'Komplett automatizált rendszerek világszínvonalú berendezésekkel', btnLink: 'contact-us'},
-            {bgImg: 'slider8.jpg', sliderTitle: 'Kérdés esetén ', sliderSubtitle: 'Ügyfélszolgálatunk és szervizünk rendelkezésre áll', btnLink: 'contact-us'},
+            {
+                bgImg: 'slider9.jpg', 
+                sliderTitle: 'Korszerű Baromfitelepek', 
+                sliderTitleEng: 'Modern Poultry Farms', 
+                sliderSubtitle: 'Komplett automatizált rendszerek világszínvonalú berendezésekkel', 
+                sliderSubtitleEng: 'Complete automated systems with top-quality equipment', 
+                btnLink: 'projects'
+            },
+            {
+                bgImg: 'slider7.jpg', 
+                sliderTitle: 'Tervezéstől a megvalósításig', 
+                sliderTitleEng: 'From design to implementation', 
+                sliderSubtitle: 'Az eredményes baromfitartás műszaki háttere', 
+                sliderSubtitleEng: 'Behind the success: technical background for effective poultry farming', 
+                btnLink: 'services'
+            },
+            {
+                bgImg: 'slider8.jpg', 
+                sliderTitle: 'Kérdés esetén ', 
+                sliderTitleEng: 'In case of question ', 
+                sliderSubtitle: 'Ügyfélszolgálatunk és szervizünk rendelkezésre áll', 
+                sliderSubtitleEng: 'Our customer service is at your disposal', 
+                btnLink: 'contact-us'
+            },
         ];
 
         let DataList = data.map((val, i)=>{
@@ -39,10 +62,10 @@ class HeroSliderTwo extends Component{
                             <div className="row">
                                 <div className="col-lg-12">
                                 <div className="hero-slider__content m-auto text-center">
-                                    <div className={'pt-slider'}>
-                                    <h2 className="hero-slider__title">{val.sliderTitle}</h2>
-                                    <p className="hero-slider__text">{val.sliderSubtitle}</p>
-                                    </div>
+                                    <a className={'pt-slider'} href={`${process.env.PUBLIC_URL}/#${val.btnLink}`}>
+                                    <h2 className="hero-slider__title">{isEng ? val.sliderTitleEng : val.sliderTitle}</h2>
+                                    <p className="hero-slider__text">{isEng ? val.sliderSubtitleEng : val.sliderSubtitle}</p>
+                                    </a>
                                 </div>
                                 </div>
                             </div>

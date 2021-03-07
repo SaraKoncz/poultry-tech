@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 class Contact extends Component{
     render(){
+        const {isEng} = this.props;
         return(
             <div id={"contact-us"}>
                 {/*====================  content page content ====================*/}
@@ -12,18 +13,18 @@ class Contact extends Component{
                     <div className="row section-space--bottom--50">
                         <div className="col-lg-12">
                             <div className="section-title-area text-center">
-                                <h2 className="section-title section-space--bottom--50">Kapcsolat</h2>
+                                <h2 className="section-title section-space--bottom--50">{isEng ? 'Contact Us' : 'Kapcsolat'}</h2>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-4 col-12">
                         <div className="contact-information">
-                            <h3>Elérhetőségünk</h3>
+                            <h3>{isEng ? 'Contact Information' : 'Elérhetőségünk'}</h3>
                             <ul>
                                 <li>
                                     <span className="icon"><i className="ion-android-map" /></span>
-                                    <span className="text"><span>9081 Győrújbarát</span><span>Vállalkozók útja 5/A</span></span>
+                                    <span className="text"><span>9081 Győrújbarát</span><span>{isEng ? 'Vállalkozók Str. 5/A' : 'Vállalkozók útja 5/A'}</span></span>
                                 </li>
                                 <li>
                                     <span className="icon"><i className="ion-ios-telephone-outline" /></span>

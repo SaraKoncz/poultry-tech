@@ -38,6 +38,7 @@ class Footer extends Component{
     }
 
     render(){
+        const {isEng} = this.props;
         return(
             <div>
                 {/*====================  footer area ====================*/}
@@ -55,42 +56,42 @@ class Footer extends Component{
                                         <img src="assets/img/logo/logo.png" className="img-fluid" alt="" />
                                     </a>
                                     </div>
-                                    <div className="footer-desc">
-                                        Cégünk, komplett szolgáltatást biztosít patrnerei részére mellyel a baromfitartó eszközök legújabb fejlesztéseit teszi számukra elérhetővé.
+                                    <div className="footer-desc">{isEng ? 'Our company provides a complete service to its partners, making the latest developments in poultry equipment available to them.' 
+                                        : 'Cégünk, komplett szolgáltatást biztosít patrnerei részére mellyel a baromfitartó eszközök legújabb fejlesztéseit teszi számukra elérhetővé.'}
                                     </div>
                                 </div>
                                 </div>
                                 <div className="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
                                 {/* footer widget */}
                                 <div className="footer-widget">
-                                    <h4 className="footer-widget__title">NAVIGÁCIÓ</h4>
+                                    <h4 className="footer-widget__title">{isEng ? 'NAVIGATION' : 'NAVIGÁCIÓ'}</h4>
                                     <ul className="footer-widget__navigation">
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Kezdőlap</a></li>
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Cégismertető</a></li>
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Projektek</a></li>
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Pályázat</a></li>
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Kapcsolat</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/#home`}>{isEng ? 'Home' : 'Kezdőlap'}</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/#about-us`}>{isEng ? 'About Us' : 'Cégismertető'}</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/#projects`}>{isEng ? 'Projects' : 'Projektek'}</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/tenders`}>{isEng ? 'Tender' : 'Pályázat'}</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/#contact-us`}>{isEng ? 'Contact us' : 'Kapcsolat'}</a></li>
                                     </ul>
                                 </div>
                                 </div>
                                 <div className="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
                                 {/* footer widget */}
                                 <div className="footer-widget">
-                                    <h4 className="footer-widget__title">SZOLGÁLTATÁSOK</h4>
+                                    <h4 className="footer-widget__title">{isEng ? 'SERVICES' : 'SZOLGÁLTATÁSOK'}</h4>
                                     <ul className="footer-widget__navigation">
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Tervezés</a></li>
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Kereskedelem</a></li>
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Eszköz tanácsadás</a></li>
-                                    <li><a href={`${process.env.PUBLIC_URL}/`}>Szervíz</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/#services`}>{isEng ? 'Project design' : 'Tervezés'}</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/#services`}>{isEng ? 'Equipment Sales' : 'Kereskedelem'}</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/#services`}>{isEng ? 'Product Support' : 'Eszköz tanácsadás'}</a></li>
+                                    <li><a href={`${process.env.PUBLIC_URL}/#services`}>{isEng ? 'After Sales Service' : 'Szervíz'}</a></li>
                                     </ul>
                                 </div>
                                 </div>
                                 <div className="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
                                 {/* footer widget */}
                                 <div className="footer-widget mb-0">
-                                    <h4 className="footer-widget__title">KAPCSOLAT</h4>
+                                    <h4 className="footer-widget__title">{isEng ? 'CONTACT US' : 'KAPCSOLAT'}</h4>
                                     <div className="footer-widget__content">
-                                    <p className="address">9081 Győrújbarát, Vállalkozók útja 5/A</p>
+                                    <p className="address">{isEng ? 'Vállalkozók Str 5/A, 9081 Győrújbarát' : '9081 Győrújbarát, Vállalkozók útja 5/A'}</p>
                                     <ul className="contact-details">
                                         <li>+36 20 388 5550</li>
                                         <li>+36 96 526 474</li>

@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import NavBar from '../components/NavBar';
-import BrandLogoSlider from '../components/BrandLogoSlider';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
 class Projects extends Component{
     render(){
+        const {isEng, onLanguageChange} = this.props;
 
         let data = [
             {
@@ -39,7 +39,40 @@ class Projects extends Component{
             }
         ];
 
-        let Datalist = data.map((val, i)=> {
+        let dataEng = [
+            {
+                img: 'aviagen.jpg',
+                projectTitle: 'Aviagen Grandparent Farms',
+                projectSubtitle: 'Our company plays an active role in the region’s poultry meat supply through supplying equipment to the Aviagen grandparent breeding pair integration poultry farms...',
+                pageLink: 'project-details-aviagen'
+            },
+            {
+                img: 'mcdonalds.jpg',
+                projectTitle: "McDondald's Flagship Farms",
+                projectSubtitle: 'The broiler meat farms of Hungary’s MasterGood Group were the first in Europe to be awarded the McDonald’s Flagship rating, where poultry comfort, technological discipline...',
+                pageLink: 'project-details-mcdonalds'
+            },
+            {
+                img: 'tiszakecske.jpg',
+                projectTitle: 'Hungerit Zrt. Tiszakécske Duck Farm',
+                projectSubtitle: 'Hungerit Zrt. commissioned our company with the assembly and delivery of its rearing technological equipment for its green field investment of 21 rearing houses, aimed at expanding...',
+                pageLink: 'project-details-hungerit'
+            },
+            {
+                img: 'külpiac.jpg',
+                projectTitle: 'Poultry-Tech on Foreign Markets',
+                projectSubtitle: 'We have participated successfully at international tenders announced in the eastern region with our poultry farming systems and accompanying services...',
+                pageLink: 'project-details-kulpiac'
+            },
+            {
+                img: 'gyermely.jpg',
+                projectTitle: 'Expansion of Production Capacities at Gyermely',
+                projectSubtitle: 'Gyermelyi Tojás Kft. linked the expansion of its production capacity to meeting EU requirements through the procurement of a new breeder cage technology for the 4 new hatchery...',
+                pageLink: 'project-details-gyermelyi'
+            }
+        ];
+
+        let Datalist = (isEng ? dataEng : data).map((val, i)=> {
             return(
                 <div className="col-lg-4 col-sm-6 col-12 section-space--bottom--30" key={i}>
                     <div className="service-grid-item service-grid-item--style2">
@@ -65,7 +98,7 @@ class Projects extends Component{
         return(
             <div>
                 {/* Navigation bar */}
-                <NavBar/>
+                <NavBar isEng={isEng} onLanguageChange={onLanguageChange}/>
 
                 {/* breadcrumb */}
                 {/*====================  breadcrumb area ====================*/}
@@ -74,11 +107,7 @@ class Projects extends Component{
                         <div className="row">
                             <div className="col">
                                 <div className="page-banner text-center">
-                                    <h1>Projektjeink közül</h1>
-                                    <ul className="page-breadcrumb">
-                                        <li><a href="/">Kezdőlap</a></li>
-                                        <li>Projektjeink közül</li>
-                                    </ul>
+                                    <h1>{isEng ? 'Some of Our Projects' : 'Projektjeink közül'}</h1>
                                 </div>
                             </div>
                         </div>
@@ -101,15 +130,6 @@ class Projects extends Component{
                                 </div>
                             </div>
                             <div className="row section-space--top--60">
-                                {/*<div className="col">*/}
-                                {/*    <ul className="page-pagination">*/}
-                                {/*        <li><a href="/"><i className="fa fa-angle-left" /> Prev</a></li>*/}
-                                {/*        <li className="active"><a href="/">01</a></li>*/}
-                                {/*        <li><a href="/">02</a></li>*/}
-                                {/*        <li><a href="/">03</a></li>*/}
-                                {/*        <li><a href="/"><i className="fa fa-angle-right" /> Next</a></li>*/}
-                                {/*    </ul>*/}
-                                {/*</div>*/}
                             </div>
                         </div>
                     </div>
@@ -118,15 +138,9 @@ class Projects extends Component{
 
                 {/*====================  End of project page content  ====================*/}
 
-                
-                {/* Brand logo */}
-                {/*<BrandLogoSlider background = "grey-bg" />*/}
+                <Footer isEng={isEng}/>
 
-                {/* Footer */}
-                <Footer/>
-
-                {/* Mobile Menu */}
-                <MobileMenu/>
+                <MobileMenu isEng={isEng} onLanguageChange={onLanguageChange}/>
             </div>
         )
     }

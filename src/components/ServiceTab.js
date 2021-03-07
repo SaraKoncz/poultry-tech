@@ -68,25 +68,26 @@ class ServiceTabExample extends Component{
             {
                 bgUrl: "tervezes.jpg",
                 contentTitle: 'Project design',
-                contentDesc: '',
+                contentDesc: 'Compilation of a tool system that maximally serves the housing needs of poultry. Placement and installation planning that complies animal welfare requirements and environmental protection aspects.',
                 serviceLink: 'planning'
             },
             {
                 bgUrl: "kereskedelem.jpg",
                 contentTitle: 'Equipment Sales',
-                contentDesc: '',
+                contentDesc: 'Our company distributes world-class equipment from leading European and overseas manufacturers, enabling poultry farmers to apply the latest and forward-looking technical technology.' +
+                'This way, the specific indicators of production can be improved, the costs of feed, energy, labor, etc. can be radically reduced. In addition compliance with veterinary regulations can be ensured.',
                 serviceLink: 'sales'
             },
             {
                 bgUrl: "szaktanacsadas.jpg",
                 contentTitle: 'Product support',
-                contentDesc: '',
+                contentDesc: 'Our 24 years of experience in equipment distribution, installation and operation at the service of our clients claiming that the production results and market competitiveness of our partners can be increased.',
                 serviceLink: 'support'
             },
             {
                 bgUrl: "szerviz.jpg",
                 contentTitle: 'After Sales Service',
-                contentDesc: '',
+                contentDesc: 'Our warehouse base and specialists are available to our partners 24 hours a day by phone or in a personal consultation regarding technology and operation issues, for consultation and education.',
                 serviceLink: 'service'
             },
         ];
@@ -101,7 +102,7 @@ class ServiceTabExample extends Component{
                         <div className="service-tab__single-content">
                             <h3 className="service-tab__title">{val.contentTitle}</h3>
                             <p className="service-tab__text">{val.contentDesc}</p>
-                            {!isEng && <a href={`${process.env.PUBLIC_URL}/${val.serviceLink}`} className="see-more-link">{readMoreHun}</a>}
+                            {/*<a href={`${process.env.PUBLIC_URL}/${val.serviceLink}`} className="see-more-link">{isEng ? readMoreEng : readMoreHun}</a>*/}
                         </div>
                     </div>
                 </TabPanel>

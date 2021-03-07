@@ -33,9 +33,9 @@ class ServiceGridSlider extends Component{
 
         };
 
-        const {isEng = false} = this.props;
-        const titleHun = 'Projektjeink közül';
-        const titleEng = 'Some of our Projects';
+        const {isEng} = this.props;
+        const titleHun = 'Projektjeink Közül';
+        const titleEng = 'Some of Our Projects';
         const readMoreHun = 'További részletek';
         const readMoreEng = 'See more';
         
@@ -73,10 +73,36 @@ class ServiceGridSlider extends Component{
         ];
 
         let dataEng = [
-            {img: 'service1.jpg', serviceTitle: 'Land Minning', serviceExcerpt: 'Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor', serviceUrl: 'service-details-left-sidebar'},
-            {img: 'service2.jpg', serviceTitle: 'Work Management', serviceExcerpt: 'Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor', serviceUrl: 'service-details-left-sidebar'},
-            {img: 'service3.jpg', serviceTitle: 'Material Engineering', serviceExcerpt: 'Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor', serviceUrl: 'service-details-left-sidebar'},
-            {img: 'service1.jpg', serviceTitle: 'Power and Energy', serviceExcerpt: 'Lorem ipsum dolor sit amet consect adipisi elit sed do eiusm tempor', serviceUrl: 'service-details-left-sidebar'},
+            {
+                img: 'aviagen.jpg',
+                serviceTitle: 'Aviagen Grandparent Breeding Farms',
+                serviceExcerpt: 'Our company plays an active role in the region’s poultry meat supply through supplying equipment to the Aviagen grandparent breeding pair integration poultry farms...',
+                serviceUrl: 'project-details-aviagen'
+            },
+            {
+                img: 'mcdonalds.jpg',
+                serviceTitle: "McDondald's Flagship Farms",
+                serviceExcerpt: 'The broiler meat farms of Hungary’s MasterGood Group were the first in Europe to be awarded the McDonald’s Flagship rating, where poultry comfort, technological discipline...',
+                serviceUrl: 'project-details-mcdonalds'
+            },
+            {
+                img: 'tiszakecske.jpg',
+                serviceTitle: 'Hungerit Zrt. Tiszakécske Duck Farm',
+                serviceExcerpt: 'Hungerit Zrt. commissioned our company with the assembly and delivery of its rearing technological equipment for its green field investment of 21 rearing houses...',
+                serviceUrl: 'project-details-hungerit'
+            },
+            {
+                img: 'külpiac.jpg',
+                serviceTitle: 'Poultry-Tech On Foreign Markets',
+                serviceExcerpt: 'We have participated successfully at international tenders announced in the eastern region with our poultry farming systems and accompanying services...',
+                serviceUrl: 'project-details-kulpiac'
+            },
+            {
+                img: 'gyermely.jpg',
+                serviceTitle: 'Expansion of production capacities at Gyermely',
+                serviceExcerpt: 'Gyermelyi Tojás Kft. linked the expansion of its production capacity to meeting EU requirements through the procurement of a new breeder cage technology for...',
+                serviceUrl: 'project-details-gyermelyi'
+            }
         ];
 
         let DataList = (isEng ? dataEng : dataHun).map((val, i)=>{

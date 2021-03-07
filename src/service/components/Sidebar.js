@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 
 class Sidebar extends Component{
     render(){
-
+        const {isEng} = this.props;
         let data = [
-            {sidebarListLink: "planning", sidebarListIcon: 'flaticon-024-statistics', sidebarListText: 'Tervezés'},
-            {sidebarListLink: "sales", sidebarListIcon: 'flaticon-028-manufacturing-plant', sidebarListText: 'Eszköz kereskedelem'},
-            {sidebarListLink: "support", sidebarListIcon: 'flaticon-030-management', sidebarListText: 'Szaktanácsadás'},
-            {sidebarListLink: "service", sidebarListIcon: 'flaticon-021-worker', sidebarListText: 'Szervíz'},
+            {sidebarListLink: "planning", sidebarListIcon: 'flaticon-024-statistics', sidebarListText: 'Tervezés', sidebarListTextEng: 'Project design'},
+            {sidebarListLink: "sales", sidebarListIcon: 'flaticon-028-manufacturing-plant', sidebarListText: 'Eszköz kereskedelem', sidebarListTextEng: 'Equipment sales'},
+            {sidebarListLink: "support", sidebarListIcon: 'flaticon-030-management', sidebarListText: 'Szaktanácsadás', sidebarListTextEng: 'Product support'},
+            {sidebarListLink: "service", sidebarListIcon: 'flaticon-021-worker', sidebarListText: 'Szervíz', sidebarListTextEng: 'After Sales Service'},
         ];
 
         let Datalist = data.map((val, i)=>{
             return(
-                <li key={i}><a href={val.sidebarListLink}><i className={val.sidebarListIcon} />{val.sidebarListText}</a></li>
+                <li key={i}><a href={val.sidebarListLink}><i className={val.sidebarListIcon} />{isEng ? val.sidebarListTextEng : val.sidebarListText}</a></li>
             )
         });
 
@@ -20,7 +20,7 @@ class Sidebar extends Component{
             <div>
                 <div className="sidebar-wrapper">
                     <div className="sidebar">
-                        <h3 className="sidebar-title">Szolgáltatások</h3>
+                        <h3 className="sidebar-title">{isEng ? 'Our Services' : 'Szolgáltatásaink'}</h3>
                         <ul className="sidebar-list">
                             {Datalist}
                         </ul>

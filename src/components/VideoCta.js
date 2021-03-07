@@ -3,10 +3,10 @@ import React, {Component} from 'react';
 class VideoCta extends Component {
 
     constructor() {
-        super()
+        super();
         this.state = {
             isOpen: false
-        }
+        };
         this.openModal = this.openModal.bind(this)
     }
 
@@ -38,7 +38,7 @@ class VideoCta extends Component {
                                         {isEng ? intro2Eng : intro2Hun}
                                     </p>
                                     <a href={`${process.env.PUBLIC_URL}/#contact-us`}
-                                       className="ht-btn ht-btn--round">KAPCSOLAT</a>
+                                       className="ht-btn ht-btn--round">{isEng ? 'CONTACT US' : 'KAPCSOLAT'}</a>
                                 </div>
                             </div>
                             <div className="col-lg-5 offset-lg-1 col-md-6">

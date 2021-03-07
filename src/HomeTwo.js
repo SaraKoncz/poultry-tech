@@ -9,33 +9,36 @@ import MobileMenu from './components/MobileMenu';
 import Contact from "./pages/Contact";
 
 class HomeTwo extends Component{
+    
     render(){
+        
+        const {isEng, onLanguageChange} = this.props;
         
         return(
             <div>
                 
                 {/* Navigation bar */}
-                <NavBar isEng={false}/>
+                <NavBar onLanguageChange={onLanguageChange} isEng={isEng}/>
                 
                 {/* Hero slider */}
-                <HeroSliderTwo isEng={false}/>
+                <HeroSliderTwo isEng={isEng}/>
                 
                 {/* Video CTA */}
-                <VideoCta isEng={false}/>
+                <VideoCta isEng={isEng}/>
 
                 {/* Service Tab */}
-                <ServiceTab isEng={false}/>
+                <ServiceTab isEng={isEng}/>
                 
                 {/* Project Slider */}
-                <ProjectSliderTwo isEng={false}/>
+                <ProjectSliderTwo isEng={isEng}/>
                 
-                <Contact/>
+                <Contact isEng={isEng}/>
                 
                 {/* Footer */}
-                <Footer isEng={false}/>
+                <Footer isEng={isEng}/>
 
                 {/* Mobile Menu */}
-                <MobileMenu isEng={false}/>
+                <MobileMenu isEng={isEng}/>
                 
 
             </div>
