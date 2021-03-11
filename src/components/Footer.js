@@ -94,8 +94,9 @@ class Footer extends Component{
                                     <p className="address">{isEng ? 'Vállalkozók Str 5/A, 9081 Győrújbarát' : '9081 Győrújbarát, Vállalkozók útja 5/A'}</p>
                                     <ul className="contact-details">
                                         <li>+36 20 388 5550</li>
+                                        <li>+36 20 388 5543</li>
                                         <li>+36 96 526 474</li>
-                                        <li>info@poultry-tech.com</li>
+                                        <li style={{whiteSpace: "nowrap"}}>info@poultry-tech.com</li>
                                     </ul>
                                     </div>
                                 </div>

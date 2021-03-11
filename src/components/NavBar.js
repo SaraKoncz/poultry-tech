@@ -78,8 +78,7 @@ class NavBar extends Component {
                                                     </div>
                                                     <div className="header-info-single-item__content">
                                                         <h6 className="header-info-single-item__title">{isEng ? 'Phone' : 'Telefon'}</h6>
-                                                        <p className="header-info-single-item__subtitle">+36 20 388
-                                                            5550</p>
+                                                        <p className="header-info-single-item__subtitle">+36 96 526 474</p>
                                                     </div>
                                                 </div>
                                                 <div className="header-info-single-item">
@@ -136,7 +135,7 @@ class NavBar extends Component {
                                                         </li>
                                                         <li onClick={this.props.onLanguageChange}><a
                                                             onClick={e => e.preventDefault()}
-                                                            href="#">{this.props.isEng ? 'MAGYAR' : 'ENGLISH'}</a></li>
+                                                            href={`${process.env.PUBLIC_URL}/#home`}>{this.props.isEng ? 'MAGYAR' : 'ENGLISH'}</a></li>
                                                     </ul>
                                                 </nav>
                                             </div>

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 
 class MobileMenu extends Component {
 
@@ -72,7 +71,7 @@ class MobileMenu extends Component {
                                         href={`${process.env.PUBLIC_URL}/#contact-us`}>{isEng ? "CONTACT" : "KAPCSOLAT"}</a>
                                     </li>
                                     <li onClick={this.props.onLanguageChange}><a onClick={e => e.preventDefault()}
-                                                                                 href="#">{isEng ? 'MAGYAR' : 'ENGLISH'}</a>
+                                                                                 href={`${process.env.PUBLIC_URL}/#home`}>{isEng ? 'MAGYAR' : 'ENGLISH'}</a>
                                     </li>
                                     {/*</li>*/}
                                 </ul>
@@ -82,7 +81,7 @@ class MobileMenu extends Component {
                                     <div className="header-contact-info">
                                         <ul className="header-contact-info__list">
                                             <li><i className="ion-android-phone-portrait"/> <a
-                                                href="tel://+36 20 388 5550">+36 20 388 5550 </a></li>
+                                                href="tel://+36 96 526 474">+36 96 526 474 </a></li>
                                             <li><i className="ion-android-mail"/> <a
                                                 href="mailto:info@poultry-tech.com">info@poultry-tech.com</a></li>
                                         </ul>

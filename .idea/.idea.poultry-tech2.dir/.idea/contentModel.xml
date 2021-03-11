@@ -46,7 +46,6 @@
       <e p="node_modules\eslint-plugin-react-hooks" t="IncludeRecursive" />
       <e p="node_modules\file-loader" t="IncludeRecursive" />
       <e p="node_modules\fs-extra" t="IncludeRecursive" />
-      <e p="node_modules\gh-pages" t="IncludeRecursive" />
       <e p="node_modules\html-webpack-plugin" t="IncludeRecursive" />
       <e p="node_modules\identity-obj-proxy" t="IncludeRecursive" />
       <e p="node_modules\is-wsl" t="IncludeRecursive" />

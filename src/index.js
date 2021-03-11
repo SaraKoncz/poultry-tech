@@ -33,7 +33,7 @@ class Root extends Component{
                     <Route exact path={`${process.env.PUBLIC_URL}/project-details-aviagen`} render={() => (<ProjectComp projectName="aviagen" isEng={isEng} onLanguageChange={onLanguageChange}/>)}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/project-details-gyermelyi`} render={() => (<ProjectComp projectName="gyermely" isEng={isEng} onLanguageChange={onLanguageChange}/>)}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/project-details-hungerit`} render={() => (<ProjectComp projectName="tiszakecske" isEng={isEng} onLanguageChange={onLanguageChange}/>)}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/project-details-kulpiac`} render={() => (<ProjectComp projectName="kulpiac" isEng={isEng} onLanguageChange={onLanguageChange}/>)}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/project-details-kulpiac`} render={() => (<ProjectComp projectName="külpiac" isEng={isEng} onLanguageChange={onLanguageChange}/>)}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/project-details-mcdonalds`} render={() => (<ProjectComp projectName="mcdonalds" isEng={isEng} onLanguageChange={onLanguageChange}/>)}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/404`} render={() => (<PageNotFound isEng={isEng}/>)}/>
                     <Route component={NoMAtch} />
@@ -62,7 +62,6 @@ class App extends Component{
 
     render(){
         const {isEng} = this.state;
-        console.log(isEng);
         return(
             <div><Root isEng={isEng} onLanguageChange={this.changeLanguage}/></div>
         )

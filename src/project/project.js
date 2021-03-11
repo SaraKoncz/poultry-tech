@@ -150,7 +150,7 @@ class ProjectComp extends Component{
                     <div className="container">
                     <div className="row">
                         <div className="col-12 section-space--bottom--40">
-                        <div className="project-image"><img src="assets/img/service/aviagen.jpg" className="img-fluid" alt="" /></div>
+                        <div className="project-image"><img src={`assets/img/service/${currentProject.projectName}.jpg`} className="img-fluid" alt="" /></div>
                         </div>
                         <div className="col-lg-4 col-12 section-space--bottom--30">
                             <div className="project-information">
@@ -165,7 +165,7 @@ class ProjectComp extends Component{
                         <div className="col-lg-8 col-12 section-space--bottom--30 pl-30 pl-sm-15 pl-xs-15">
                             <div className="project-details">
                                 <h2>{currentProject.title}</h2>
-                                {currentProject.text.map(e => <p>{e}</p>)}
+                                {currentProject.text.map((e, i) => <p key={i}>{e}</p>)}
                             </div>
                         </div>
                         <div className="col-12">

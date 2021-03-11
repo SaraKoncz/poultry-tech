@@ -92,8 +92,8 @@ class ServiceTabExample extends Component{
             },
         ];
 
-        const readMoreHun = 'További részletek';
-        const readMoreEng = 'See more';
+        // const readMoreHun = 'További részletek';
+        // const readMoreEng = 'See more';
 
         let serviceTabContentDatalist = (isEng ? serviceTabContentDataEng : serviceTabContentData).map((val, i)=>{
             return(
