@@ -74,7 +74,7 @@ class PhotoGallery extends Component{
                 case 'tiszakecske':
                     project = tiszakecske;
                     break;
-                case 'kulpiac':
+                case 'külpiac':
                     project = kulpiac;
                     break;
                 case 'gyermely':
