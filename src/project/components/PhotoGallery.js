@@ -11,8 +11,6 @@ class PhotoGallery extends Component{
             "aviagen4.jpg",
             "aviagen5.jpg",
             "aviagen6.jpg",
-            "aviagen7.jpg",
-            "aviagen8.jpg"
         ];
 
         const mcdonalds = [
@@ -27,7 +25,10 @@ class PhotoGallery extends Component{
             "gyermely4.jpg",
             "gyermely5.jpg",
             "gyermely6.jpg",
-            "gyermely7.jpg"
+            "gyermely7.jpg",
+            "gyermely9.jpg",
+            "gyermely10.jpg",
+            "gyermely11.jpg"
         ];
 
         const kulpiac = [
@@ -35,14 +36,7 @@ class PhotoGallery extends Component{
             "kulpiac2.jpg",
             "kulpiac3.jpg",
             "kulpiac4.jpg",
-            "kulpiac5.jpg",
-            "kulpiac6.jpg",
-            "kulpiac7.jpg",
-            "kulpiac8.jpg",
-            "kulpiac9.jpg",
-            "kulpiac10.jpg",
-            "kulpiac11.jpg",
-            "kulpiac12.jpg",
+            "kulpiac5.jpg"
         ];
 
         const tiszakecske = [

@@ -18,10 +18,12 @@ class VideoCta extends Component {
         const {isEng = false} = this.props;
         const titleHun = 'Cégismertető';
         const titleEng = 'About Us';
-        const intro1Hun = 'Cégünk 1995-töl  - korábban mint a Bábolna Részvénytársaság és Vállalatcsoport Eszközkereskedelmi Divíziója, majd később önálló privát társaságként - aktív szerepet játszik a térség baromfiiparának eszközellátásában.  Az elmúlt tíz év során a mai napig mintegy 3000 baromfi istálló – közel 3 millió m² - ( broiler végtermék, broiler szülőpár, pulyka, liba és kacsa hízlaló és szülőpár istállók ) rekonstrukciójának kivitelezésével piacvezető szerephez jutott a magyarországi mélyalmos baromfieszköz forgalmazásban.';
-        const intro2Hun = 'Cégünk, komplett szolgáltatást – tervezés, konzultáció, értékesítés, szállítás és szervíz – biztosít patrnerei részére mellyel a baromfitartó eszközök legújabb fejlesztéseit teszi számukra elérhetővé.';
-        const intro1Eng = 'Our company has been playing an active role since 1995 in selling and servicing equipment for the poultry industry of the region, earlier as the Equipment Trading Division of Babolna Corporation and Company Group and later as an independent private entity. During the past years through completion of reconstruction of more than 3000 poultry houses (broiler product, broiler parent stock, broiler GP stock, turkey, goose and duck growing facilities and parent stock houses, table egg production) . ';
-        const intro2Eng = 'We are a full service company, our activities - design, consultation, sales and service - makes the latest development in poultry equipment available to our customers.';
+        const intro1Hun = 'Cégünk 1995-töl - korábban mint a Bábolna Részvénytársaság és Vállalatcsoport Eszközkereskedelmi Divíziója, majd később önálló privát társaságként - aktív szerepet játszik a térség baromfiiparában.';
+        const intro2Hun = 'Az elmúlt két évtized során a mai napig mintegy 3000 baromfi istálló – közel 3 millió m² - ( broiler végtermék, broiler szülőpár és nagyszülőpár, pulyka, liba és kacsa hízlaló és szülőpár istállók továbbá ketreces tojóistállók) kivitelezésével és rekonstukciójával meghatározó szerephez jutott a baromfitartók eszközellátásában.';
+        const intro3Hun = 'Cégünk, komplett szolgáltatást – tervezés, konzultáció, értékesítés, szállítás és szervíz – biztosít patrnerei részére mellyel a baromfitartó eszközök legújabb fejlesztéseit teszi számukra elérhetővé.';
+        const intro1Eng = 'Our company has been playing an active role since 1995 in selling and servicing equipment for the poultry industry of the region, earlier as the Equipment Trading Division of Babolna Corporation and Company Group and later as an independent private entity.';
+        const intro2Eng = 'During the past two decades through completion of reconstruction of more than 3000 poultry houses (broiler product, broiler parent stock, broiler GP stock, turkey, goose and duck growing facilities and parent stock houses, table egg production) . ';
+        const intro3Eng = 'We are a full service company, our activities - design, consultation, sales and service - makes the latest development in poultry equipment available to our customers.';
         return (
             <div id={'about-us'}>
                 {/*====================  video cta area ====================*/}
@@ -36,6 +38,9 @@ class VideoCta extends Component {
                                     </p>
                                     <p className="video-cta-content__text">
                                         {isEng ? intro2Eng : intro2Hun}
+                                    </p>
+                                    <p className="video-cta-content__text">
+                                        {isEng ? intro3Eng : intro3Hun}
                                     </p>
                                     <a href={`${process.env.PUBLIC_URL}/#contact-us`}
                                        className="ht-btn ht-btn--round">{isEng ? 'CONTACT US' : 'KAPCSOLAT'}</a>

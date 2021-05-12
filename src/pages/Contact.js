@@ -28,7 +28,10 @@ class Contact extends Component{
                                 </li>
                                 <li>
                                     <span className="icon"><i className="ion-ios-telephone-outline" /></span>
-                                    <span className="text"><a href="tel:+36203885550">+36 20 388 5550</a><a href="tel:+3696526474">+36 96 526 474</a></span>
+                                    <span className="text">
+                                        <a href="tel:+36203885550">+36 20 388 5550</a>
+                                        <a href="tel:+36203885543">+36 20 388 5543</a>
+                                        <a href="tel:+3696526474">+36 96 526 474</a></span>
                                 </li>
                                 <li>
                                     <span className="icon"><i className="ion-ios-email-outline" /></span>

@@ -46,20 +46,19 @@ class ServiceTabExample extends Component{
             {
                 bgUrl: "kereskedelem.jpg", 
                 contentTitle: 'Eszköz kereskedelem', 
-                contentDesc: 'Társaságunk vezető európai, valamint tengerentúli gyártók világszínvonalú berendezéseinek forgalmazásával, lehetővé teszi a baromfitartók számára a legújabb és következő évtizedekre előremutató műszaki technológia alkalmazását.' +
-                    'Ennek révén a termelés fajlagos mutatói javíthatók, a tartás közvetlen - takarmány, energia, munkaerő stb. - költségei radikálisan csökkenthetők továbbá maximálisan biztosíthatók a tartás állategészségügyi feltételei.', 
+                contentDesc: 'Társaságunk vezető európai, valamint tengerentúli gyártók világszínvonalú berendezéseinek forgalmazásával, lehetővé teszi a baromfitartók számára a legújabb és következő évtizedekre előremutató műszaki technológia alkalmazását. Ennek révén a termelés fajlagos mutatói javíthatók, a tartás közvetlen - takarmány, energia, munkaerő stb. - költségei radikálisan csökkenthetők továbbá maximálisan biztosíthatók a tartás állategészségügyi feltételei.', 
                 serviceLink: 'sales'
             },
             {
                 bgUrl: "szaktanacsadas.jpg", 
                 contentTitle: 'Szaktanácsadás', 
-                contentDesc: '24 éves eszközforgalmazási, beszerelési és üzemeltetési tapasztalatunkat megbízóink szolgálatába állítva partnereink termelési eredményei és piaci versenyképessége emelhető.', 
+                contentDesc: 'Több mint két évtizedes eszközforgalmazási, beszerelési és üzemeltetési tapasztalatunkat megbízóink szolgálatába állítva partnereink termelési eredményei és piaci versenyképessége emelhető.', 
                 serviceLink: 'support'
             },
             {
                 bgUrl: "szerviz.jpg", 
                 contentTitle: 'Szervíz', 
-                contentDesc: 'Raktárbázisunk és szakembereink a nap 24 órájában állnak rendelkezésre partnereink számára telefonon vagy személyes konzultáció keretében tartástechnológiai és üzemeltetési kérdésekben, szaktanácsadásban, oktatásban. ', 
+                contentDesc: 'Raktárbázisunk és szakembereink a nap 24 órájában állnak rendelkezésre partnereink számára telefonon, e-mailben vagy személyes konzultáció keretében tartástechnológiai és üzemeltetési kérdésekben, szaktanácsadásban, oktatásban.', 
                 serviceLink: 'service'
             },
         ];
