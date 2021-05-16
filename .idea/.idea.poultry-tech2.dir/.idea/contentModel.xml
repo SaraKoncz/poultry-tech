@@ -70,6 +70,7 @@
       <e p="node_modules\postcss-safe-parser" t="IncludeRecursive" />
       <e p="node_modules\react" t="IncludeRecursive" />
       <e p="node_modules\react-app-polyfill" t="IncludeRecursive" />
+      <e p="node_modules\react-cookie-consent" t="IncludeRecursive" />
       <e p="node_modules\react-countup" t="IncludeRecursive" />
       <e p="node_modules\react-dev-utils" t="IncludeRecursive" />
       <e p="node_modules\react-dom" t="IncludeRecursive" />

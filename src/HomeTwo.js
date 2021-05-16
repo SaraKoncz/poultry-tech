@@ -7,6 +7,7 @@ import ServiceTab from './components/ServiceTab';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 import Contact from "./pages/Contact";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 class HomeTwo extends Component{
     
@@ -39,6 +40,15 @@ class HomeTwo extends Component{
 
                 {/* Mobile Menu */}
                 <MobileMenu isEng={isEng}/>
+                <CookieConsent 
+                    buttonText={isEng ? 'I understand' : 'Elfogadom'}
+                    buttonStyle={{
+                        background: "#25337b",
+                        color: "white"
+                    }}    
+                >
+                    {isEng ? 'We use technical and analytics cookies to ensure that we give you the best experience on our website.' : 'Ez az oldal cookie-kat használ. Ha az oldalon böngészik, akkor elfogadja, hogy a személyre szabott, maradéktalan minőségű tartalom érdekében az oldal cookie-k segítségét vegye igénybe.'}
+                </CookieConsent>
                 
 
             </div>
