@@ -7,7 +7,7 @@ import ServiceTab from './components/ServiceTab';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 import Contact from "./pages/Contact";
-import CookieConsent, { Cookies } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 
 class HomeTwo extends Component{
     
