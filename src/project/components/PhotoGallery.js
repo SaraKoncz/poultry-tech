@@ -23,18 +23,18 @@ class PhotoGallery extends Component{
             "gyermely1.jpg",
             "gyermely2.jpg",
             "gyermely4.jpg",
-            "gyermely5.jpg",
+            "gyermely5.JPG",
             "gyermely6.jpg",
-            "gyermely7.jpg",
+            "gyermely7.JPG",
             "gyermely9.jpg",
             "gyermely10.jpg",
             "gyermely11.jpg"
         ];
 
         const kulpiac = [
-            "kulpiac1.jpg",
-            "kulpiac2.jpg",
-            "kulpiac3.jpg",
+            "kulpiac1.JPG",
+            "kulpiac2.JPG",
+            "kulpiac3.JPG",
             "kulpiac4.jpg",
             "kulpiac5.jpg"
         ];
